@@ -1,0 +1,112 @@
+.header {
+    width: 100%;
+    background-image: linear-gradient(rgb(245, 62, 45),#FE6232);
+    height: 120px;
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar .header__navbar--list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    color: var(--white-color);
+    margin: 10px 0;
+}
+.header__navbar .header__navbar--list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin: 0 2px;
+}
+.header__navbar .header__navbar--list:first-child >span{
+    height: 70%;
+    border-left: 2px solid rgba(255, 255, 255, 0.324);
+    margin: auto 4px;
+}
+.header__navbar .header__navbar--list .navbar--list_item .navbar-link{
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+}
+.header__navbar .header__navbar--list .navbar--list_item .navbar-link .icon{
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+/* drop down for language */
+.icon-drop-down{
+    font-size: 14px;
+    color: var(--white-color);
+}
+.dropdown,.drop__down--account {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    --spacing: 20px;
+    --padding: 10px;
+  }
+  .dropdown-list,.dropdown__account-list  {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 150px;
+    z-index: 10;
+    opacity: 0;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    padding: 10px;
+    box-shadow: 1px 2px 10px #575757;
+  }
+  .dropdown-item,.account--list_item {
+    padding: var(--padding);
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  .dropdown-item:hover {
+    color: #ea0303;
+  }
+  .dropdown:hover .dropdown-list,.drop__down--account:hover .dropdown__account-list {
+    opacity: 1;
+  }
+/* end drop down */
+
+/* box account */
+.drop__down--account .img-account{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 8px;
+}
+.account--list_item:hover {
+    color: #1d67c8;
+    }
+/* end account */
+.header__qrcode{
+    position: relative;
+}
+.header__qrcode .header__qrcode-items{
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(75, 75, 75, 0.607);
+    border-radius: 3px;
+    transition: all 0.2s linear;
+}
+.header__qrcode .header__qrcode-items .img--qr2{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.header__qrcode:hover .header__qrcode-items{
+    opacity: 1;
+}
+

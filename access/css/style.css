@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./reponsive.css);
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 100%;
+    line-height: 1rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+} 
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
