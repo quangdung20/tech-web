@@ -1,0 +1,34 @@
+#main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 2000px; */
+    top: var(--header-height);
+}
+.container{
+    display: flex;
+    max-width: 1200 !important;   
+    margin-bottom: 15px !important; 
+}
+.container__left{
+    background: #ae8989;
+    padding: 0 !important;
+}
+.container__right{
+    background: #ae8989;
+    padding: 0 !important;
+}
+.container__left--list{
+    border-radius:  10px;
+    height: 200px;
+}
+.container__right--list{
+    
+}
+.container__left--list_item{
+
+}
+.container__left-item_link{
+
+}

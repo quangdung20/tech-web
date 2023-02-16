@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url(./header.css);
+@import url(./header.css);
+@import url(main.css);
 @import url(./footer.css);
 @import url(./reponsive.css);
 
@@ -7,6 +9,9 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --header-height: 120px;
+    --navbar-height: 35px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 *{
     box-sizing: inherit;
@@ -17,7 +22,9 @@ html{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+a{
+    text-decoration: none;
+  }
 p {
     font-size: 1rem;
 }
@@ -26,6 +33,12 @@ p {
     max-width: 100%;
     margin: 0 auto;
 }
+.grid__container--left{
+
+}
+.grid__container--right{
+  
+}
 
 .grid__full-width{
     width: 100%;
@@ -33,4 +46,8 @@ p {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.is-flex {
+    display: flex!important;
 }
