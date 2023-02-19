@@ -3,7 +3,8 @@
     background-image: linear-gradient(rgb(48, 22, 249),#f864f1);
     height: var(--header-height);
     position: fixed !important;
-    /* top: 0; */
+    top: 0;
+    box-shadow: 0 1px 6px rgb(60, 12, 12);
     z-index: 9999;
 }
 

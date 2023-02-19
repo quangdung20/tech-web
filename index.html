@@ -6,16 +6,15 @@
     <meta name="viewport" container="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/access/css/grid.css">
+    <link rel="stylesheet" href="/access/css/style-slideShow.css">
     <link rel="stylesheet" href="/access/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>The Shoppe
-    </title>
+    <title>TECH HOME</title>
 </head>
 <body>
     <div id="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <nav class="header__navbar">
                     <ul class="header__navbar--list">
                         <li class="navbar--list_item header__qrcode opacity">
@@ -23,7 +22,7 @@
                                 <span class="reduce-opacity">Vào cửa hàng trên ứng dụng TECHHOME</span></a>
                             <a href="/index.html" class="header__qrcode-items">
                             <div class="img--qr1"><img 
-                                    style="width: 150px" src="/access/image/QR_code.png"  alt="QR_code"></div>
+                                    style="width: 150px" src="/access/image/QR_code.png"  alt="QR_code"></div>w
                             <div class="img--qr2">
                                 <img style="width: 55px" src="/access/image/app-store.png">                 
                                 <img style="width: 55px" src="/access/image/gg-play.png">
@@ -129,11 +128,11 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="header-with-search">
-                    <a href="/index.html" class="header-logo">
+                <nav class=" grid wide row header-with-search">
+                    <a href="/index.html" class="header-logo col l-2 m-2 c-0">
                         <img src="./access/image/logo-header.png" alt="logo-header">
                     </a>
-                    <div class="header__search">
+                    <div class="header__search col l-8 m-10 c-12">
                         <div class="header__search--field">
                             <input type="text" class="search-input" placeholder="Nhập để tìm kiếm sản phẩm...">
                             <button type="submit" class="search-button">
@@ -142,7 +141,7 @@
                         </div>
                     
                     </div>
-                    <div class="header__cart">
+                    <div class="header__cart col l-2 m-0 c-0">
                        <a href="/Giỏ Hàng.html" class="header__cart-wrap">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="cart--list_notice"></span>
@@ -213,50 +212,136 @@
             </header>
     
         <div id="main">
-            <div class="container grid row">
-                <div class="container__left col-sm-3 col-md-6 col-lg-4 col-xl text-white">
-                        <ul class="container__left--list">
-                            <li class="container__left--list_item">
-                                <a href="/index.html" class="container__left-item_link">
-                                    <span>Điện thoại</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                </a>
-                            </li>
-                            <li class="container__left--list_item">
-                                <a href="/index.html" class="container__left-item_link">
-                                    <span>Điện thoại</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                </a>
-                            </li>
-                            <li class="container__left--list_item">
-                                <a href="/index.html" class="container__left-item_link">
-                                    <span>Điện thoại</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                </a>
-                            </li>
-                            <li class="container__left--list_item">
-                                <a href="/index.html" class="container__left-item_link">
-                                    <span>Điện thoại</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                </a>
-                            </li>
-                            <li class="container__left--list_item">
-                                <a href="/index.html" class="container__left-item_link">
-                                    <span>Điện thoại</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="container grid wide row">
+                <div class=" row sm-gutter col l-3 m-4 c-0  ">
+                    <div class="container__left">
+                        <div class="category-left">
+                            <span> Danh Mục</span>
+                        </div>
+                        <div class="container__left--list row">
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/smarthome.png" alt="">
+                                <span>Nhà Thông Minh</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/phone.png" alt="">
+                                <span>Điện thoại</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/taplet.png" alt="">
+                                <span>Máy Tính Bảng</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/laptop.png" alt="">
+                                <span>Laptop</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/PC.png" alt="">
+                                <span>PC - Màn Hình</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/headphone.png" alt="">
+                                <span>Âm Thanh</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/tivi.png" alt="">
+                                <span>TiVi</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/watch.png" alt="">
+                                <span>Đồng Hồ</span>
+                            </a>
+                            <a href="/index.html" class="container__left--item c-12">
+                                <img class="img-category" src="/access/image/category/sale.png" alt="">
+                                <span>Khuyến Mãi</span>
+                            </a>
+                        </div>
                     </div>
-            
-            <div class="container__right col-sm-9 col-md-6 col-lg-8 col-xl-9 text-white">
-               <div class="container__right--list"></div>
+                </div>
+                <div class=" row sm-gutter col l-6 m-8 c-12">
+                    <div class="container__center-slider">
+                        <a href="#" class="mySlides">
+                            <img src="/access/image/img-ads/fold-4-00241.webp" style="width:100%">
+                        </a>
+                        <a href="#" class="mySlides">
+                            <img src="/access/image/img-ads/msi right.webp" style="width:100%">
+                        </a>
+                        <a href="#" class="mySlides">
+                            <img src="/access/image/img-ads/Rigright-109-00234.webp" style="width:100%">
+                        </a>
+                        <a href="#" class="mySlides">
+                            <img src="/access/image/slide2.png" style="width:100%">
+                        </a>   <a href="#" class="mySlides">
+                            <img src="/access/image/slide3.png" style="width:100%">
+                        </a>
+                        <p class="prev" onclick="plusSlides(-1)">❮</p>
+                        <p class="next" onclick="plusSlides(1)">❯</p>
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="/access/image/slide2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>  
+                            <div class="column">
+                                <img class="demo cursor" src="/access/image/slide2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/access/image/slide2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/access/image/slide2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/access/image/slide2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div> 
+                        </div >
+                    </div>
+                </div>
+                <div class="  row sm-gutter col l-3 m-0 c-0 ">
+                    <div class="container__right">
+                        <div class="container__right--list">
+                            <img  class ="img_ads"src="/access/image/img-ads/fold-4-00241.webp" alt="ads">
+                            <img  class ="img_ads" src="/access/image/img-ads/msi right.webp" alt="ads">
+                            <img  class ="img_ads" src="/access/image/img-ads/Rigright-109-00234.webp" alt="ads">
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
-    </div>
 
         <footer class="footer"></footer>
     </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        }
+
+        setInterval(function() {
+        slideIndex++;
+        showSlides(slideIndex);
+        }, 3000);
+        </script>
 </body>
 </html>
  
