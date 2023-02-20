@@ -9,15 +9,16 @@
 }
 .container{
     padding-top: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #df909076;
 }
+/*  style container left */
 .container__left
 {   
     position: relative;
     background: #ffffff;
     border-radius: 10px;
-    height: 370px;
+    height: calc(var(--category-height));
     padding: 12px;
     box-shadow: 1px 1px 10px 0.5px #3b3b3b;
 
@@ -26,30 +27,15 @@
     font-size: 16px;
     justify-content: center;
     display: flex;
-    margin: 10px;
+    margin: 0;
     color: var(--black-color);
     font-weight: 700;
     opacity: 0.8;
 }
-.container__center-slider{
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 0.5px #3b3b3b;
-    background: #ffffff;
-    height: 370px;
-    overflow: hidden;
-
-
+.img-category{
+    width: 25px;
 }
-.container__right{
-    height: 370px;
-    padding: 7px 15px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px #494949;
-    overflow: hidden;
 
-}
 .container__left 
 .container__left--list{
     padding: 0 15px;
@@ -58,6 +44,10 @@
     padding: 5px;
     display: flex;
 }
+.container__left--item:hover > span{
+    opacity: 0.6;
+}
+
 .container__left--item> span{
     text-align: center;
     padding-left: 10px;
@@ -67,12 +57,48 @@
     font-weight: 700;
     opacity: 0.8;
 }
-.container__right--list{
+
+/* style slideShow container center*/
+.container__center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0.5px #3b3b3b;
+    background: #ffffff;
+    height: calc(var(--category-height));
+    overflow: hidden;
+}
+.container__center-slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.img-category{
-    width: 25px;
+/* style container right */
+.container__right{
+    height: calc(var(--category-height));
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #494949;
+    overflow: hidden;
+
 }
-.img_ads{
+.container__right--list{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container__right--item{
+    /* padding: 2px;
+    border-radius: 10px;
+    overflow: hidden; */
+
+}
+
+
+.ads-item{
     width: 100%;
 }

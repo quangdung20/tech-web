@@ -1,0 +1,17 @@
+
+/* PC medium resolution > */
+@media (min-width: 1023px) {
+    .container__center{
+        justify-content: space-around;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container__center{
+        justify-content: space-around;
+    }
+}
+
+/* >= Tablet */
+@media (max-width: 740px) {
+
+}

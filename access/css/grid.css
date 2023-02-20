@@ -312,6 +312,7 @@ Column được sử dụng với class "col", đi kèm theo đó là một số
     .l-1,
     .l-2,
     .l-2-4,
+    .l-5-6,
     .l-3,
     .l-4,
     .l-5,
@@ -338,6 +339,10 @@ Column được sử dụng với class "col", đi kèm theo đó là một số
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
+    }
+    .l-5-6{
+        flex: 0 0 56%;
+        max-width: 56%;
     }
 
     .l-3 {
@@ -475,6 +480,7 @@ Column được sử dụng với class "col", đi kèm theo đó là một số
     .wide .l-1,
     .wide .l-2,
     .wide .l-2-4,
+    .wide .l-5-6,
     .wide .l-3,
     .wide .l-4,
     .wide .l-5,
@@ -501,6 +507,10 @@ Column được sử dụng với class "col", đi kèm theo đó là một số
     .wide .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
+    }
+    .wide .l-5-6 {
+        flex: 0 0 56%;
+        max-width: 56%;
     }
 
     .wide .l-3 {

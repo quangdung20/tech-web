@@ -13,7 +13,7 @@
     .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 60%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -22,13 +22,25 @@
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
+    }
+    .fade{
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade {
+        from{
+            opacity: 0.4;
+        }
+        to{
+            opacity: 1;
+        }
+        
     }
 
     /* Position the "next button" to the right */
     .next,
     .prev{
-        border-radius: 3px 0 0 3px;
         transition: all 0.3s;
         background-color: rgba(67, 67, 67, 0.8);
     }
@@ -36,16 +48,17 @@
         left: -42px;
     }
     .next{
+        border-radius: 3px 0 0 3px;
         right: -42px;
     }
 
     /* On hover, add a black background color with a little bit see-through */
     /* .prev:hover, */
     .container__center-slider:hover .next {
-        right: 0;
+        right: -5px;
     }
     .container__center-slider:hover .prev{
-        left: 0;
+        left: -5px;
     }
 
     /* Container for image text */
@@ -56,17 +69,36 @@
     color: white;
     }
     /* 5 columns side by side*/
-    .column {
-    float: left;
-    width: 20%;
-    } 
 
     /* Add a transparency effect for thumnbail images */
     .demo {
     opacity: 0.6;
+    
     }
+    .demo .cursor{
+        align-items: center;
+        background: #fff;
+        border-radius: 0;
+        color: #343a40;
+        cursor: pointer;
+        display: flex;
+        font-size: 12px;
+        height: 100%;
+        justify-content: center;
+        line-height: 20px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .swiper-bottom .demo.cursor >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
 
-    .active,
-    .demo:hover {
-    opacity: 1;
+    }
+    .active{
+        opacity: 1;
+        font-weight: 800;
+
     }
